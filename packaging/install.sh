@@ -2,7 +2,7 @@
 set -euo pipefail
 
 REPO="hassanvfx/legalflow-mx"
-VERSION="${LEGALFLOW_VERSION:-0.1.0}"
+VERSION="${LEGALFLOW_VERSION:-0.1.1}"
 ROOT="${LEGALFLOW_HOME:-$HOME/.legalflow/releases/$VERSION}"
 
 info() { printf '\n[AI LegalFlow MX] %s\n' "$1"; }

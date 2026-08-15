@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param(
-    [string]$Version = $(if ($env:LEGALFLOW_VERSION) { $env:LEGALFLOW_VERSION } else { "0.1.0" }),
+    [string]$Version = $(if ($env:LEGALFLOW_VERSION) { $env:LEGALFLOW_VERSION } else { "0.1.1" }),
     [switch]$SkipSetup
 )
 
