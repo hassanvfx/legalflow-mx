@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "hooks": {
+    "SessionStart": [{"command": "legalflow doctor --json", "timeout": 15}],
+    "PreToolUse": [{"command": "echo 'AI LegalFlow MX policy: never force-push shared history or delete originals.'", "timeout": 5}]
+  }
+}

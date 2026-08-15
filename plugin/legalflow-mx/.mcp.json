@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "legalflow-mx": {
+      "command": "python3",
+      "args": ["-m", "legalflow.mcp_legal_mx"]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+schema: legalflow/matter/v1
+id: MATTER-PLACEHOLDER
+name: Untitled matter
+storage_mode: local-only
+approval_mode: solo

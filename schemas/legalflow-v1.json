@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hassanvfx.github.io/legalflow-mx/schemas/legalflow-v1.json",
+  "title": "AI LegalFlow MX canonical objects v1",
+  "$defs": {
+    "base": {"type":"object","required":["schema","id","created_at"],"properties":{"schema":{"type":"string","pattern":"^legalflow/[a-z_]+/v1$"},"id":{"type":"string","pattern":"^[A-Z]+-"},"created_at":{"type":"string","format":"date-time"}},"additionalProperties":true},
+    "matter": {"allOf":[{"$ref":"#/$defs/base"},{"required":["name","storage","approval"]}]},
+    "document": {"allOf":[{"$ref":"#/$defs/base"},{"required":["sha256","size_bytes","original_path"]}]},
+    "fact": {"allOf":[{"$ref":"#/$defs/base"},{"required":["support","status"]}]},
+    "act": {"allOf":[{"$ref":"#/$defs/base"},{"required":["date","type","support"]}]},
+    "authority": {"allOf":[{"$ref":"#/$defs/base"},{"required":["source","verification"]}]},
+    "proposal": {"allOf":[{"$ref":"#/$defs/base"},{"required":["issue","position"]}]},
+    "decision": {"allOf":[{"$ref":"#/$defs/base"},{"required":["action","object","reason"]}]},
+    "deadline": {"allOf":[{"$ref":"#/$defs/base"},{"required":["trigger","status"]}]},
+    "checkpoint": {"allOf":[{"$ref":"#/$defs/base"},{"required":["git_tag","state_hash"]}]},
+    "matter_review": {"allOf":[{"$ref":"#/$defs/base"},{"required":["next_review_on","purpose","status"]}]},
+    "access_grant": {"allOf":[{"$ref":"#/$defs/base"},{"required":["action","repository","handle","permission"]}]}
+  }
+}

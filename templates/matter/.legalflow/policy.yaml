@@ -1,0 +1,10 @@
+storage:
+  mode: local-only
+ai_processing:
+  remote_models: allowed
+external_share:
+  approval_required: true
+approval:
+  mode: solo
+  solo_counsel_auto_accept: true
+  require_human_for_critical_deadlines: true

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legalflow-mx"
+version = "0.1.0"
+description = "AI LegalFlow MX: evidence-driven, Git-native legal matter workflow for Mexico"
+requires-python = ">=3.12"
+dependencies = ["cryptography>=42,<51"]
+
+[project.scripts]
+legalflow = "legalflow.cli:main"
+
+[tool.setuptools.package-data]
+legalflow = ["fixtures/*.txt"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

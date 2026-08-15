@@ -1,0 +1,6 @@
+{
+  "version": "0.1.0",
+  "repository": "hassanvfx/legalflow-mx",
+  "release_assets": ["legalflow-mx-0.1.0.tar.gz", "legalflow-mx-0.1.0.sha256"],
+  "docs_base": "https://hassanvfx.github.io/legalflow-mx"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "legalflow-mx",
+  "version": "0.1.0",
+  "description": "AI LegalFlow MX: evidence-driven legal matter workflow for Mexican legal matters.",
+  "author": {"name": "Hassan Uriostegui and Aurora Cotne"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI LegalFlow MX",
+    "shortDescription": "Create and preserve evidence-backed legal matters.",
+    "longDescription": "Guided, file-backed legal matter workflow with explicit evidence and safety gates.",
+    "developerName": "AI LegalFlow MX",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Start AI LegalFlow MX setup and explain any required human action."
+  }
+}

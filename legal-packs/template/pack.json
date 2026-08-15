@@ -1,0 +1,18 @@
+{
+  "id": "mx-example-draft",
+  "version": "0.0.0",
+  "schema_version": "1",
+  "skills": ["Describe the reviewed workflow here."],
+  "sources": ["List official sources here."],
+  "deadline_rules": ["List reviewed deadline rules here."],
+  "taxonomy": ["List reviewed categories here."],
+  "fixtures": ["Add synthetic fixture paths here."],
+  "examples": ["Add reviewed examples here."],
+  "disclaimers": ["Not legal advice; requires Mexican legal review."],
+  "legal_review": {
+    "status": "pending",
+    "approved_by": null,
+    "approved_at": null,
+    "evidence": null
+  }
+}

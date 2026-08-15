@@ -1,0 +1,8 @@
+# ClineFlow - per-developer config
+.clineflow.local
+output/
+tmp/
+book/build/
+__pycache__/
+.pytest_cache/
+*.pyc

@@ -1,0 +1,5 @@
+Documento sintético de demostración.
+
+El 15 de agosto de 2026 se recibió una notificación de ejemplo. Este archivo no
+corresponde a una persona, expediente o autoridad real y sólo sirve para probar
+el flujo local de AI LegalFlow MX.

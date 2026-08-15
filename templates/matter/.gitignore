@@ -1,0 +1,5 @@
+.legalflow-local/
+outputs/current/
+derived/
+*.sqlite
+__pycache__/
