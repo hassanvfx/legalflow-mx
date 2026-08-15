@@ -114,3 +114,8 @@ the initial product commit was pushed to the new public repository
 `https://github.com/hassanvfx/legalflow-mx`. GitHub Pages deployment is now
 configured from the `docs-site/` artifact; release publication and remote CI
 evidence are the next actions.
+
+The first remote run exposed two defects: a PowerShell launcher string used an
+invalid quote escape, and the public content verifier still required an
+intentionally removed internal status page. Both were corrected; the Pages
+workflow now requests explicit Pages enablement before deployment.

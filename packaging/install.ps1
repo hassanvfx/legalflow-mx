@@ -97,7 +97,7 @@ if (-not $validRelease) {
 
 New-Item -ItemType Directory -Force -Path $BinRoot | Out-Null
 $Launcher = Join-Path $BinRoot "legalflow.cmd"
-$LauncherText = "@echo off`r`nset \"PYTHONPATH=$ReleaseRoot\src;%PYTHONPATH%\"`r`n$PythonLauncher -m legalflow.cli %*`r`n"
+$LauncherText = "@echo off`r`nset `"PYTHONPATH=$ReleaseRoot\src;%PYTHONPATH%`"`r`n$PythonLauncher -m legalflow.cli %*`r`n"
 [IO.File]::WriteAllText($Launcher, $LauncherText, [Text.UTF8Encoding]::new($false))
 
 $UserPath = [Environment]::GetEnvironmentVariable("Path", "User")

@@ -140,3 +140,6 @@
   initial AI LegalFlow MX commit was published to `hassanvfx/legalflow-mx`.
   Added an automated GitHub Pages deployment workflow for the `docs-site/`
   artifact.
+* **Remote CI fixes**: Corrected the PowerShell launcher quote escape found by
+  the Windows parser, aligned content validation with commercial Pages, and
+  enabled Pages configuration in the deployment workflow.
