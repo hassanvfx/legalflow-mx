@@ -29,7 +29,11 @@ jobs:
           $tokens = $null; $errors = $null
           [System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path 'packaging/install.ps1'), [ref]$tokens, [ref]$errors) | Out-Null
           if ($errors.Count -gt 0) { $errors | Format-List | Out-String | Write-Error; exit 1 }
-      - run: PYTHONPATH=src python -m unittest tests.test_cli -q
+      - name: Run CLI contracts
+        shell: pwsh
+        run: |
+          $env:PYTHONPATH = 'src'
+          python -m unittest tests.test_cli -q
       - name: Install a verified local release and create the Windows Demo
         shell: pwsh
         run: |

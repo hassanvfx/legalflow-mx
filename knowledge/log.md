@@ -143,6 +143,9 @@
 * **Remote CI fixes**: Corrected the PowerShell launcher quote escape found by
   the Windows parser, aligned content validation with commercial Pages, and
   enabled Pages configuration in the deployment workflow.
+* **Remote workflow follow-up**: Corrected Windows CI environment syntax and
+  prepared the one-time owner-authorized Pages configuration required by this
+  repository policy.
 * **Release hotfix preparation**: Bumped product installers and release
   manifest to 0.1.1 so the corrected Windows bootstrap can ship without
   rewriting the published 0.1.0 release.

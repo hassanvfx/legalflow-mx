@@ -119,3 +119,9 @@ The first remote run exposed two defects: a PowerShell launcher string used an
 invalid quote escape, and the public content verifier still required an
 intentionally removed internal status page. Both were corrected; the Pages
 workflow now requests explicit Pages enablement before deployment.
+
+A subsequent remote run showed that the Windows workflow itself used Bash
+environment syntax; it was replaced with PowerShell assignment. GitHub Actions
+cannot create the Pages site under this repository policy, so the authenticated
+owner account must create the Pages configuration once; deployments can then
+use the workflow token.
