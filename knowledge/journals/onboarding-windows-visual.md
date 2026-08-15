@@ -106,3 +106,11 @@ also has no configured remote and all repository contents are untracked.
 Publishing, creating the private/public remote, release upload and Pages
 deployment therefore require the repository owner to authenticate GitHub and
 explicitly authorize the external changes.
+
+## Publication resumed
+
+The repository owner completed GitHub device authentication. On 2026-08-15,
+the initial product commit was pushed to the new public repository
+`https://github.com/hassanvfx/legalflow-mx`. GitHub Pages deployment is now
+configured from the `docs-site/` artifact; release publication and remote CI
+evidence are the next actions.

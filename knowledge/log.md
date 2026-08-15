@@ -136,3 +136,7 @@
   invalid, API access failed, no remote is configured and the worktree is
   entirely untracked. Release and Pages publication require owner authentication
   and authorization.
+* **Publication resumed**: GitHub device authentication succeeded and the
+  initial AI LegalFlow MX commit was published to `hassanvfx/legalflow-mx`.
+  Added an automated GitHub Pages deployment workflow for the `docs-site/`
+  artifact.
